@@ -7,6 +7,13 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   const [accessToken, setAccessToken] = useState("");
+  const [savedSongs, setSavedSongs] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/songs")
+      .then((r) => r.json())
+      .then((data) => console.log(data));
+  });
 
   useEffect(() => {
     fetch("https://accounts.spotify.com/api/token", {

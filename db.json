@@ -1,16 +1,16 @@
 {
-  "toys": [
+  "songs": [
     {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
+      "title": "Phoenix",
+      "artist": "Fall Out Boy",
+      "album": "Save Rock and Roll",
+      "art": "https://upload.wikimedia.org/wikipedia/en/a/a0/Save-Rock-And-Roll.jpg"
     },
     {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
+      "title": "Knee Socks",
+      "artist": "Arctic Monkeys",
+      "album": "AM",
+      "art": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg/440px-%22AM%22_%28Arctic_Monkeys%29.jpg"
     }
   ]
 }
