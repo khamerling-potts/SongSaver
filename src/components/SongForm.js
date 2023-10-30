@@ -1,6 +1,6 @@
-function SongForm({ newSong, onUpdateNewSong }) {
+function SongForm({ newSong, onUpdateNewSong, onAddSong }) {
   return (
-    <form>
+    <form onSubmit={(e) => onAddSong(e)}>
       <input
         type="text"
         name="title"
@@ -29,6 +29,7 @@ function SongForm({ newSong, onUpdateNewSong }) {
         value={newSong.art}
         onChange={onUpdateNewSong}
       />
+      <button type="submit">Add Song</button>
     </form>
   );
 }

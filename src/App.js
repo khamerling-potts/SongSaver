@@ -15,7 +15,7 @@ function App() {
       .then((data) => setSavedSongs(data));
   }, []);
 
-  function addSong(song) {
+  function handleAddSong(song) {
     setSavedSongs([...savedSongs, song]);
   }
   return (
@@ -23,7 +23,7 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <Outlet context={{ savedSongs, addSong }} />
+      <Outlet context={{ savedSongs, handleAddSong }} />
     </div>
   );
 }
