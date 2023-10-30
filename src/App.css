@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+/*My own css below*/
+.card {
+  height: 100%;
+}

@@ -1,14 +1,19 @@
 import { Link, Outlet, useOutletContext } from "react-router-dom";
+import SongCard from "../components/SongCard";
 
 function SavedSongs() {
   const { savedSongs } = useOutletContext();
+  const songList = savedSongs.map((song) => (
+    <SongCard key={song.id} song={song} />
+  ));
   return (
     <>
-      <main>
+      <div className="container-fluid">
         <h1>This is my saved component!</h1>
-        <Link to={"/saved/summary"}>View Summary</Link>
         <Outlet context={savedSongs} />
-      </main>
+        <div className="row">{songList}</div>
+        <Link to={"/saved/summary"}>View Summary</Link>
+      </div>
     </>
   );
 }

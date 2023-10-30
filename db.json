@@ -4,13 +4,15 @@
       "title": "Phoenix",
       "artist": "Fall Out Boy",
       "album": "Save Rock and Roll",
-      "art": "https://upload.wikimedia.org/wikipedia/en/a/a0/Save-Rock-And-Roll.jpg"
+      "art": "https://upload.wikimedia.org/wikipedia/en/a/a0/Save-Rock-And-Roll.jpg",
+      "id": 1
     },
     {
       "title": "Knee Socks",
       "artist": "Arctic Monkeys",
       "album": "AM",
-      "art": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg/440px-%22AM%22_%28Arctic_Monkeys%29.jpg"
+      "art": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg/440px-%22AM%22_%28Arctic_Monkeys%29.jpg",
+      "id": 2
     }
   ]
 }
