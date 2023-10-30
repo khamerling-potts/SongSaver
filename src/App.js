@@ -20,12 +20,18 @@ function App() {
     setSavedSongs([...savedSongs, song]);
     navigate("/saved");
   }
+  function handleUnsave(songToDelete) {
+    const updatedSongs = savedSongs.filter(
+      (song) => song.id !== songToDelete.id
+    );
+    setSavedSongs(updatedSongs);
+  }
   return (
     <div className="App">
       <header>
         <NavBar />
       </header>
-      <Outlet context={{ savedSongs, handleAddSong }} />
+      <Outlet context={{ savedSongs, handleAddSong, handleUnsave }} />
     </div>
   );
 }

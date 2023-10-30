@@ -2,9 +2,9 @@ import { Link, Outlet, useOutletContext } from "react-router-dom";
 import SongCard from "../components/SongCard";
 
 function SavedSongs() {
-  const { savedSongs } = useOutletContext();
+  const { savedSongs, handleUnsave } = useOutletContext();
   const songList = savedSongs.map((song) => (
-    <SongCard key={song.id} song={song} />
+    <SongCard key={song.id} song={song} handleUnsave={handleUnsave} />
   ));
   return (
     <>
