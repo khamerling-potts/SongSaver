@@ -1,3 +1,4 @@
+import App from "./App";
 import Home from "./pages/Home";
 import SavedSongs from "./pages/SavedSongs";
 import Summary from "./pages/Summary";
@@ -16,7 +17,7 @@ const routes = [
         element: <SavedSongs />,
         children: [
           {
-            path: "/summary",
+            path: "/saved/summary",
             element: <Summary />,
           },
         ],
