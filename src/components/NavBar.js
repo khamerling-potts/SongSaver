@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
-    <div>
-      <NavLink to="/home">Home</NavLink>
-      <NavLink to="/savedsongs">Saved Songs</NavLink>
-      <NavLink to="/summary">Summary</NavLink>
-    </div>
+    <nav>
+      <NavLink to="/" className="nav-link">
+        Home
+      </NavLink>
+      <NavLink to="/saved" className="nav-link">
+        Saved Songs
+      </NavLink>
+    </nav>
   );
 }
 
