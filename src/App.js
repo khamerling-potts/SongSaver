@@ -3,11 +3,12 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import { useEffect, useState } from "react";
 import { CLIENT_SECRET, CLIENT_ID } from "./config";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function App() {
   const [accessToken, setAccessToken] = useState("");
   const [savedSongs, setSavedSongs] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:3000/songs")
@@ -17,6 +18,7 @@ function App() {
 
   function handleAddSong(song) {
     setSavedSongs([...savedSongs, song]);
+    navigate("/saved");
   }
   return (
     <div className="App">
