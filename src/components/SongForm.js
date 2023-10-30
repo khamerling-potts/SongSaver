@@ -29,6 +29,13 @@ function SongForm({ newSong, onUpdateNewSong, onAddSong }) {
         value={newSong.art}
         onChange={onUpdateNewSong}
       />
+      <input
+        type="text"
+        name="genre"
+        placeholder="Genre..."
+        value={newSong.genre}
+        onChange={onUpdateNewSong}
+      />
       <button type="submit">Add Song</button>
     </form>
   );

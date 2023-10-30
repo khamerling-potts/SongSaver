@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SongForm from "../components/SongForm";
+import SpotifyContainer from "../components/SpotifyContainer";
 import { useOutletContext } from "react-router-dom";
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     album: "",
     artist: "",
     art: "",
+    genre: "",
   });
 
   const { handleAddSong } = useOutletContext();
@@ -39,6 +41,7 @@ function Home() {
         onUpdateNewSong={handleUpdateNewSong}
         onAddSong={onAddSong}
       />
+      <SpotifyContainer />
     </main>
   );
 }
