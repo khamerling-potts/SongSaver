@@ -67,7 +67,17 @@ function SpotifyContainer() {
       });
   }
 
-  return <div>Spotify</div>;
+  return (
+    <div>
+      <form>
+        <input
+          type="text"
+          name="search"
+          placeholder="Search for songs on Spotify..."
+        />
+      </form>
+    </div>
+  );
 }
 
 export default SpotifyContainer;

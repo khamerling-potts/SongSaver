@@ -35,14 +35,20 @@ function Home() {
   }
 
   return (
-    <main>
-      <SongForm
-        newSong={newSong}
-        onUpdateNewSong={handleUpdateNewSong}
-        onAddSong={onAddSong}
-      />
-      <SpotifyContainer />
-    </main>
+    <div>
+      <div className="container-fluid home1">
+        <h1>Save a Song Below:</h1>
+        <SongForm
+          newSong={newSong}
+          onUpdateNewSong={handleUpdateNewSong}
+          onAddSong={onAddSong}
+        />
+      </div>
+      <div className="container-fluid home2">
+        <h1>Or browse Spotify's tracks first</h1>
+        <SpotifyContainer />
+      </div>
+    </div>
   );
 }
 

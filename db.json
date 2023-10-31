@@ -23,22 +23,6 @@
       "art": "https://m.media-amazon.com/images/I/61GBbgSBdJS._UXNaN_FMjpg_QL85_.jpg",
       "genre": "indie rock",
       "id": 4
-    },
-    {
-      "title": "Knee Socks",
-      "album": "AM",
-      "artist": "Arctic Monkeys",
-      "art": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg/440px-%22AM%22_%28Arctic_Monkeys%29.jpg",
-      "genre": "indie",
-      "id": 5
-    },
-    {
-      "title": "Dance Dance",
-      "album": "From Under The Cork Tree",
-      "artist": "Fall Out Boy",
-      "art": "https://i.scdn.co/image/ab67616d0000b27371565eda831124be86c603d5",
-      "genre": "modern rock",
-      "id": 6
     }
   ]
 }
