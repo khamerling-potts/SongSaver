@@ -1,4 +1,4 @@
-function SongCard({ song, handleUnsave }) {
+function SongCard({ song, handleUnsave, onSelectSong, type }) {
   function onUnsave() {
     fetch(`http://localhost:3000/songs/${song.id}`, {
       method: "DELETE",
@@ -14,9 +14,18 @@ function SongCard({ song, handleUnsave }) {
           <h5 className="card-text">{song.title}</h5>
           <h5 className="card-text">{song.album}</h5>
           <h5 className="card-text">{song.artist}</h5>
-          <button className="btn btn-primary" onClick={onUnsave}>
-            Unsave
-          </button>
+          {type === "saved" ? (
+            <button className="btn btn-primary" onClick={onUnsave}>
+              Unsave
+            </button>
+          ) : (
+            <button
+              className="btn btn-primary"
+              onClick={(e) => onSelectSong(song)}
+            >
+              Select
+            </button>
+          )}
         </div>
       </div>
     </div>

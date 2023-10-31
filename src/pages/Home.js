@@ -18,6 +18,10 @@ function Home() {
     setNewSong({ ...newSong, [event.target.name]: event.target.value });
   }
 
+  function handleSelectSong(song) {
+    setNewSong(song);
+  }
+
   function onAddSong(e) {
     e.preventDefault();
     console.log(newSong);
@@ -46,7 +50,7 @@ function Home() {
       </div>
       <div className="container-fluid home2">
         <h1>Or browse Spotify's tracks first</h1>
-        <SpotifyContainer />
+        <SpotifyContainer handleSelectSong={handleSelectSong} />
       </div>
     </div>
   );

@@ -4,7 +4,12 @@ import SongCard from "../components/SongCard";
 function SavedSongs() {
   const { savedSongs, handleUnsave } = useOutletContext();
   const songList = savedSongs.map((song) => (
-    <SongCard key={song.id} song={song} handleUnsave={handleUnsave} />
+    <SongCard
+      key={song.id}
+      song={song}
+      handleUnsave={handleUnsave}
+      type="saved"
+    />
   ));
   return (
     <>

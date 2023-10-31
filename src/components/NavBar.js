@@ -3,7 +3,7 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-light fixed-top">
       <div className="container-fluid">
-        <span class="navbar-brand mb-0 h1">SongSaver</span>
+        <span className="navbar-brand mb-0 h1">SongSaver</span>
         <div className="navbar-nav">
           <NavLink to="/" className="nav-link">
             Home
