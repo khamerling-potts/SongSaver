@@ -95,7 +95,7 @@ function SpotifyContainer({ handleSelectSong }) {
         />
         <button type="submit">Search Song</button>
       </form>
-      <div className="row spotifyrow">{spotifyList}</div>
+      <div className="row g-4 spotifyrow">{spotifyList}</div>
     </div>
   );
 }
