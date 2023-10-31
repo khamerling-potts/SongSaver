@@ -41,3 +41,7 @@
 .card {
   height: 100%;
 }
+
+.summaryCard {
+  width: 50%;
+}

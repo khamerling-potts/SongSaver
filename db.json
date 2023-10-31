@@ -5,6 +5,7 @@
       "artist": "Fall Out Boy",
       "album": "Save Rock and Roll",
       "art": "https://upload.wikimedia.org/wikipedia/en/a/a0/Save-Rock-And-Roll.jpg",
+      "genre": "modern rock",
       "id": 1
     },
     {
@@ -12,6 +13,7 @@
       "album": "Riot",
       "artist": "Paramore",
       "art": "https://i.scdn.co/image/ab67616d0000b273bee754528c08d5ff6799a1eb",
+      "genre": "candy pop",
       "id": 3
     },
     {
@@ -19,6 +21,7 @@
       "album": "The New Abnormal",
       "artist": "The Strokes",
       "art": "https://m.media-amazon.com/images/I/61GBbgSBdJS._UXNaN_FMjpg_QL85_.jpg",
+      "genre": "indie rock",
       "id": 4
     },
     {
@@ -26,7 +29,16 @@
       "album": "AM",
       "artist": "Arctic Monkeys",
       "art": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg/440px-%22AM%22_%28Arctic_Monkeys%29.jpg",
+      "genre": "indie",
       "id": 5
+    },
+    {
+      "title": "Dance Dance",
+      "album": "From Under The Cork Tree",
+      "artist": "Fall Out Boy",
+      "art": "https://i.scdn.co/image/ab67616d0000b27371565eda831124be86c603d5",
+      "genre": "modern rock",
+      "id": 6
     }
   ]
 }

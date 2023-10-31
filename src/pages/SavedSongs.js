@@ -10,9 +10,9 @@ function SavedSongs() {
     <>
       <div className="container-fluid">
         <h1>This is my saved component!</h1>
-        <Outlet context={savedSongs} />
         <div className="row">{songList}</div>
         <Link to={"/saved/summary"}>View Summary</Link>
+        <Outlet context={savedSongs} />
       </div>
     </>
   );
