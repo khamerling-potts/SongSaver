@@ -57,8 +57,5 @@ header {
   padding-bottom: 56px;
 }
 .home1 {
-  height: 30vh;
-}
-.home2 {
-  height: 50vh;
+  padding-bottom: 2%;
 }

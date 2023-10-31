@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { CLIENT_SECRET, CLIENT_ID } from "../config";
+import SongCard from "./SongCard";
 
 function SpotifyContainer() {
   const [spotifySongs, setSpotifySongs] = useState([]);
   const [accessToken, setAccessToken] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   //Fetch temporary access token when rendered
   useEffect(() => {
@@ -22,7 +24,7 @@ function SpotifyContainer() {
   //If access token has been set, make initial fetch request for songs
   if (accessToken) {
     fetch(
-      "https://api.spotify.com/v1/search?q=misery+business&type=track&limit=6",
+      "https://api.spotify.com/v1/search?q=misery+business&type=track&limit=8",
       {
         headers: {
           Authorization: `Bearer ${accessToken}`,
@@ -47,7 +49,7 @@ function SpotifyContainer() {
         };
       });
     });
-    Promise.all(promises).then((results) => console.log(results));
+    Promise.all(promises).then((results) => setSpotifySongs(results));
   }
 
   //No working endpoint for track genres, so we have to make a separate fetch request for artist genres
@@ -67,6 +69,10 @@ function SpotifyContainer() {
       });
   }
 
+  const spotifyList = spotifySongs.map((song) => (
+    <SongCard key={crypto.randomUUID()} song={song} />
+  ));
+
   return (
     <div>
       <form>
@@ -76,6 +82,7 @@ function SpotifyContainer() {
           placeholder="Search for songs on Spotify..."
         />
       </form>
+      <div className="row">{spotifyList}</div>
     </div>
   );
 }
