@@ -91,6 +91,7 @@ function SpotifyContainer({ handleSelectSong }) {
           placeholder="Search for songs on Spotify..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          style={{ width: "90%" }}
         />
         <button type="submit">Search Song</button>
       </form>

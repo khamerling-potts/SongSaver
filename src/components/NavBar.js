@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <nav className="navbar navbar-expand-sm  fixed-top">
       <div className="container-fluid">
         <span className="navbar-brand mb-0 h1">SongSaver</span>
         <div className="navbar-nav">
