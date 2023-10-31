@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -59,3 +60,14 @@ header {
 .home1 {
   padding-bottom: 2%;
 }
+.spotifyrow {
+  max-height: 73vh;
+  overflow: scroll;
+}
+
+/* .spotifyrow {
+  max-height: 50%;
+} */
+/* .card {
+  max-height: 50%;
+} */

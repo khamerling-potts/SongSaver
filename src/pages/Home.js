@@ -39,7 +39,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className=" home">
       <div className="container-fluid home1">
         <h1>Save a Song Below:</h1>
         <SongForm
@@ -48,7 +48,7 @@ function Home() {
           onAddSong={onAddSong}
         />
       </div>
-      <div className="container-fluid home2">
+      <div className="container home2">
         <h1>Or browse Spotify's tracks first</h1>
         <SpotifyContainer handleSelectSong={handleSelectSong} />
       </div>

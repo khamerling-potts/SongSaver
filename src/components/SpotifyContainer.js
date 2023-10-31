@@ -83,8 +83,8 @@ function SpotifyContainer({ handleSelectSong }) {
   ));
 
   return (
-    <div>
-      <form onSubmit={handleSearch}>
+    <div className="spotifycontent">
+      <form onSubmit={handleSearch} className="mb-3">
         <input
           type="text"
           name="search"
@@ -94,7 +94,7 @@ function SpotifyContainer({ handleSelectSong }) {
         />
         <button type="submit">Search Song</button>
       </form>
-      <div className="row">{spotifyList}</div>
+      <div className="row spotifyrow">{spotifyList}</div>
     </div>
   );
 }
