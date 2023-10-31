@@ -44,4 +44,15 @@
 
 .summaryCard {
   width: 50%;
+  display: inline-block;
+}
+
+nav {
+  text-align: left;
+}
+.nav-link {
+  display: inline-block;
+}
+header {
+  padding-bottom: 56px;
 }
