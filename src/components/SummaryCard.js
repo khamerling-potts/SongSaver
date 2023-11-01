@@ -9,7 +9,7 @@ function SummaryCard({ values, type }) {
       <div className="card-body">
         <h5 className="card-title">Your Saved {type}</h5>
       </div>
-      <ol className="list-group">{cardList}</ol>
+      <ol className="list-group list-group-flush">{cardList}</ol>
     </div>
   );
 }

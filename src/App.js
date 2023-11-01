@@ -29,7 +29,9 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <Outlet context={{ savedSongs, handleAddSong, handleUnsave }} />
+      <main className="content">
+        <Outlet context={{ savedSongs, handleAddSong, handleUnsave }} />
+      </main>
     </div>
   );
 }
