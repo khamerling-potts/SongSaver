@@ -1,13 +1,9 @@
-import {
-  Link,
-  Outlet,
-  useOutletContext,
-  useSearchParams,
-} from "react-router-dom";
+import { Link, Outlet, useOutletContext } from "react-router-dom";
 import SongCard from "../components/SongCard";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function SavedSongs() {
+  const summaryRef = useRef();
   const [summaryOpen, setSummaryOpen] = useState(false);
   const { savedSongs, handleUnsave } = useOutletContext();
   const songList = savedSongs.map((song) => (
@@ -19,21 +15,29 @@ function SavedSongs() {
     />
   ));
 
-  function handleClick() {
+  useEffect(() => {
+    if (summaryOpen) {
+      const summaryElement = summaryRef.current;
+      summaryElement.scrollIntoView();
+    }
+  }, [summaryOpen]);
+
+  function handleViewHide() {
     setSummaryOpen((summaryOpen) => !summaryOpen);
   }
+
   return (
     <>
       <h1>Saved Songs</h1>
       <div className="container savedcontainer mb-5">
         <div className="row">{songList}</div>
       </div>
-      <div className="container summarycontainer">
+      <div className="container summarycontainer" ref={summaryRef}>
         {summaryOpen ? (
           <Link
             to={"/saved"}
             className="btn w-100 summarybtn btn-outline-light mb-3"
-            onClick={handleClick}
+            onClick={handleViewHide}
           >
             Hide Summary
           </Link>
@@ -41,7 +45,7 @@ function SavedSongs() {
           <Link
             to={"/saved/summary"}
             className="btn w-100 summarybtn btn-outline-light mb-3"
-            onClick={handleClick}
+            onClick={handleViewHide}
           >
             View Summary
           </Link>
