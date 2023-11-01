@@ -85,15 +85,18 @@ function SpotifyContainer({ handleSelectSong }) {
   return (
     <div className="spotifycontent">
       <form onSubmit={handleSearch} className="mb-3">
-        <input
-          type="text"
-          name="search"
-          placeholder="Search for songs on Spotify..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          style={{ width: "90%" }}
-        />
-        <button type="submit">Search Song</button>
+        <div className="input-group">
+          <input
+            className="form-control"
+            type="text"
+            name="search"
+            placeholder="Search for songs on Spotify..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            style={{ width: "90%" }}
+          />
+          <button type="submit">Search Song</button>
+        </div>
       </form>
       <div className="row g-4 spotifyrow">{spotifyList}</div>
     </div>

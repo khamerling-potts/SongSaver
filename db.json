@@ -20,9 +20,17 @@
       "title": "The Adults Are Talking",
       "album": "The New Abnormal",
       "artist": "The Strokes",
-      "art": "https://m.media-amazon.com/images/I/61GBbgSBdJS._UXNaN_FMjpg_QL85_.jpg",
-      "genre": "indie rock",
-      "id": 4
+      "art": "https://i.scdn.co/image/ab67616d0000b273bfa99afb5ef0d26d5064b23b",
+      "genre": "alternative rock",
+      "id": 6
+    },
+    {
+      "title": "What Once Was",
+      "album": "Songs of Her's",
+      "artist": "Her's",
+      "art": "https://i.scdn.co/image/ab67616d0000b273fc1bc1cf80c431c2bdbde601",
+      "genre": "indie pop",
+      "id": 8
     }
   ]
 }

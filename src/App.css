@@ -64,8 +64,23 @@ header {
   max-height: 73vh;
   overflow: scroll;
 }
-.home2 {
+.home2,
+.home1 {
   min-width: 80%;
+}
+.savedcontainer,
+.summarycontainer {
+  max-height: 80vh;
+  overflow: scroll;
+  min-width: 90%;
+}
+.unsavebtn {
+  background-color: #985f19;
+  width: 100%;
+}
+.selectbtn {
+  background-color: #457e59;
+  width: 100%;
 }
 
 /* .spotifyrow {

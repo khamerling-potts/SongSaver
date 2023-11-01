@@ -39,8 +39,8 @@ function Home() {
   }
 
   return (
-    <div className=" home">
-      <div className="container-fluid home1">
+    <div className="home">
+      <div className="container home1">
         <h1>Save a Song Below:</h1>
         <SongForm
           newSong={newSong}
