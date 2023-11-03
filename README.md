@@ -8,34 +8,30 @@ This project can be run by starting up JSON server with the command `$ json-serv
 
 ## Description
 
-SongSaver is a front end application that accesses data from the [Spotify API](https://developer.spotify.com/documentation/web-api) and manipulates data in my own JSON Server.
+SongSaver is a front end React application that accesses data from the [Spotify API](https://developer.spotify.com/documentation/web-api) and manipulates data in my own JSON Server.
 
 ### Features
 
-Users are able to search for adoptable pets within 10 miles of their zip code. 6 animals display on the screen and users can navigate between result pages to see additional/previous animals. Each listing includes the animal's name, distance, photo (if available), age, gender, breed, Petfinder URL, and description (if provided).
+Users are able to input custom details about songs, including titles, artists, albums, album art, and genres. They can then save those songs and see those changes reflected in their saved songs library, which is always up to date.
 
-Another key feature of AdoptAPet is the ability to save animals by clicking on the heart in their listing. When users save an animal, the heart fills in (visually indicating they were saved) and the animal is added to the AdoptAPet JSON server database.
+Alternatively, users can search for track titles with Spotify's API. Selecting a Spotify song will autopopulate the song details form with all of the required information. The user can then save that song without needing to manually enter its details.
 
-Here is an example animal in the JSON server:
+Here is an example song format in the saved songs database:
 
 ```JSON
 {
-    "id": 60377948,
-    "name": "Tommy",
-    "distance": "6.7271 miles from 99567",
-    "imageURL": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/60377948/1/?bust=1677879146&width=600",
-    "age": "Baby",
-    "gender": "Male",
-    "breeds": {
-      "primary": "Short-Haired"
-    },
-    "species": "Guinea Pig",
-    "url": "https://www.petfinder.com/small-furry/tommy-60377948/ak/eagle-river/junipers-guinea-pig-rescue-ak81/?referrer_id=e26ce9e6-9efe-4ab7-8f9e-6572fadc0a13&utm_source=api&utm_medium=partnership&utm_content=e26ce9e6-9efe-4ab7-8f9e-6572fadc0a13",
-    "description": "A sweet young boy that was thought to be a girl piggy. He is super soft and is used to..."
+    "title": "Misery Business",
+    "album": "Riot!",
+    "artist": "Paramore",
+    "art": "https://i.scdn.co/image/ab67616d0000b273bee754528c08d5ff6799a1eb",
+    "genre": "candy pop",
+    "id": 12
 }
 ```
 
-The button under the search bar allows users to toggle between their saved animals and search results. In addition to saving an animal, you can unsave an animal by clicking on the heart again. This removes the animal from the AdoptAPet JSON server and updates the DOM accordingly.
+Outside of saving a song, user's can also navigate between pages by using the links in the navigation bar.
+
+Lastly, users can see an overview of their saved songs by clicking the 'view summary' button. This navigates to a nested route within the saved songs page and displays artists and ranked genres. This view can be hidden by clicking the 'hide summary' button.
 
 Quick demo:
 ![project gif](https://github.com/khamerling-potts/phase-1-project/assets/54592576/5cefdc2c-e03e-43a2-b246-230b5d6e883a)
