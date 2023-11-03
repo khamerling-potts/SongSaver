@@ -2,11 +2,13 @@
 
 ## Getting Started - Requirements
 
-**This project uses a free API key and Secret associated with my Spotify account.** These are stored in a config.js file that is ignored by git. In order to fetch a temporary access token and access Spotify data, you need the config.js file storing the protected keys.
+**This project uses a free Client ID and Secret associated with my Spotify account.** These are stored in a config.js file that is ignored by git. In order to fetch a temporary access token and access Spotify data, you need the config.js file storing the protected keys. You can log in to the Spotify website [here](https://accounts.spotify.com/en/login?continue=https%3A%2F%2Faccounts.spotify.com%2Foauth2%2Fv2%2Fauth%3Fresponse_type%3Dnone%26client_id%3Dcfe923b2d660439caf2b557b21f31221%26scope%3Demail%2Bopenid%2Bprofile%2Buser-self-provisioning%26redirect_uri%3Dhttps%253A%252F%252Fdeveloper.spotify.com%252Floggedin%26state%3D1bda5925-aabf-40c9-b4f5-e89a0e0853a6), and click 'create app' in your [developer dashboard](https://developer.spotify.com/dashboard) to create your own credentials.
 
 This project can be run by starting up JSON server with the command `$ json-server --watch db.json`, followed by starting the React app with `$ npm start`.
 
 ## Description
+
+Watch a full video demo [here](https://www.youtube.com/watch?v=L_Qn57NEsPI).
 
 SongSaver is a front end React application that accesses data from the [Spotify API](https://developer.spotify.com/documentation/web-api) and manipulates data in my own JSON Server.
 
@@ -36,17 +38,10 @@ Lastly, users can see an overview of their saved songs by clicking the 'view sum
 Quick demo:
 ![project gif](https://github.com/khamerling-potts/phase-2-project/blob/main/src/demo.gif)
 
-#### Various edge cases were accounted for:
-
-- When on page 1 of the search results, users are prevented from going back another page.
-- If users reach the end of the available animals, they are prevented from moving forward another page.
-- If a user moves between saved animals and search results without looking up a new zip code, the page count is maintained. This means users will be on the same page of results when they return to the results page.
-- If a zip code returns no animals, users are alerted and the DOM remains the way it was from the last successful search.
-
 ## Future additions
 
-I hope to add additional functionality to this project by implementing more search filters, including filtering by breed and by distance.
+I hope to add additional functionality to this project by implementing pagination within the Spotify results. This would allow users to view more than the first 8 results.
 
-I would also like to eventually add a page/offset endpoint in my JSON Server. This would allow me to implement page navigation buttons and only display 6 saved animals at a time.
+I also plan on allowing users to edit already saved songs within the 'saved songs' page.
 
-(Icon image courtesy of [The Noun Project](https://thenounproject.com/))
+(Icon image courtesy of Adobe Stock)
