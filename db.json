@@ -1,22 +1,6 @@
 {
   "songs": [
     {
-      "title": "Phoenix",
-      "artist": "Fall Out Boy",
-      "album": "Save Rock and Roll",
-      "art": "https://upload.wikimedia.org/wikipedia/en/a/a0/Save-Rock-And-Roll.jpg",
-      "genre": "modern rock",
-      "id": 1
-    },
-    {
-      "title": "Misery Business",
-      "album": "Riot",
-      "artist": "Paramore",
-      "art": "https://i.scdn.co/image/ab67616d0000b273bee754528c08d5ff6799a1eb",
-      "genre": "candy pop",
-      "id": 3
-    },
-    {
       "title": "The Adults Are Talking",
       "album": "The New Abnormal",
       "artist": "The Strokes",
@@ -25,20 +9,36 @@
       "id": 6
     },
     {
+      "title": "Dark Necessities",
+      "album": "The Getaway",
+      "artist": "Red Hot Chili Peppers",
+      "art": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef",
+      "genre": "alternative rock",
+      "id": 10
+    },
+    {
+      "title": "Bad Habit",
+      "album": "Bad Habit",
+      "artist": "Steve Lacy",
+      "art": "https://i.scdn.co/image/ab67616d0000b2739904ecb0b1148a128bdd5e36",
+      "genre": "afrofuturism",
+      "id": 11
+    },
+    {
+      "title": "Misery Business",
+      "album": "Riot!",
+      "artist": "Paramore",
+      "art": "https://i.scdn.co/image/ab67616d0000b273bee754528c08d5ff6799a1eb",
+      "genre": "candy pop",
+      "id": 12
+    },
+    {
       "title": "What Once Was",
       "album": "Songs of Her's",
       "artist": "Her's",
       "art": "https://i.scdn.co/image/ab67616d0000b273fc1bc1cf80c431c2bdbde601",
-      "genre": "indie pop",
-      "id": 8
-    },
-    {
-      "title": "Dance, Dance",
-      "album": "From Under The Cork Tree",
-      "artist": "Fall Out Boy",
-      "art": "https://i.scdn.co/image/ab67616d0000b27371565eda831124be86c603d5",
-      "genre": "emo",
-      "id": 9
+      "genre": "indie rock",
+      "id": 13
     }
   ]
 }
