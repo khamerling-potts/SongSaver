@@ -34,7 +34,7 @@ Outside of saving a song, user's can also navigate between pages by using the li
 Lastly, users can see an overview of their saved songs by clicking the 'view summary' button. This navigates to a nested route within the saved songs page and displays artists and ranked genres. This view can be hidden by clicking the 'hide summary' button.
 
 Quick demo:
-![project gif](https://github.com/khamerling-potts/phase-1-project/assets/54592576/5cefdc2c-e03e-43a2-b246-230b5d6e883a)
+![project gif](https://github.com/khamerling-potts/phase-2-project/blob/main/src/demo.gif)
 
 #### Various edge cases were accounted for:
 
