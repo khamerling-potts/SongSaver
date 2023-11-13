@@ -30,7 +30,7 @@ function SavedSongs() {
     <>
       <h1>Saved Songs</h1>
       <div className="container savedcontainer mb-5">
-        <div className="row">{songList}</div>
+        <div className="row g-4">{songList}</div>
       </div>
       <div className="container summarycontainer" ref={summaryRef}>
         {summaryOpen ? (
