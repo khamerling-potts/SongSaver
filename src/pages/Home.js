@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SongForm from "../components/SongForm";
 import SpotifyContainer from "../components/SpotifyContainer";
+import ControlledForm from "../components/ControlledForm";
 import { useOutletContext } from "react-router-dom";
 
 function Home() {
@@ -48,6 +49,7 @@ function Home() {
           onAddSong={onAddSong}
         />
       </div>
+      {/* <ControlledForm /> */}
       <div className="container home2">
         <h1>Or browse Spotify's tracks first</h1>
         <SpotifyContainer handleSelectSong={handleSelectSong} />
