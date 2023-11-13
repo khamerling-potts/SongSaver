@@ -44,4 +44,6 @@ I hope to add additional functionality to this project by implementing paginatio
 
 I also plan on allowing users to edit already saved songs within the 'saved songs' page.
 
+When available, I'd like to add song previews embedded in each Spotify track.
+
 (Icon image courtesy of Adobe Stock)
