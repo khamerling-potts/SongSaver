@@ -1,4 +1,4 @@
-# SongSaver - Flatiron School Phase 2 Project
+# SongSaver - A React and Javascript Music Library Tool
 
 ## Getting Started - Requirements
 
